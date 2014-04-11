@@ -1,0 +1,244 @@
+*, *:before, *:after{
+	box-sizing: border-box;
+}
+
+html, body{
+	height: 100%;
+	display: block;
+	width: 100%;
+}
+body{
+	font-size: 14px;
+	font-family: Tahoma, Sans-Serif;
+	/*background-image: url(../images/the-wall-of-dragon.jpg);*/
+	background-image: url(../images/bg.jpg);
+	background-size: 100% auto;
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+h1{
+	text-decoration: underline;
+	margin-bottom: 0;
+}
+h2{
+	font-size: 1rem;
+}
+
+.menu{
+	position: absolute;
+	right: 0;
+	top: 50px;
+	width: 320px;
+
+	-webkit-transition: opacity 500ms linear;
+	-moz-transition: opacity 500ms linear;
+	transition: opacity 500ms linear;
+}
+.menu ol{
+	list-style: none;
+	padding: 0;
+}
+.menu .start-trying{
+	cursor: pointer;
+}
+
+.menu label{
+	margin-top: 20px;
+	display: block;
+}
+
+.menu label, .menu .start-trying{
+	font-size: 2rem;
+	font-weight: bold;
+	color: #b66;
+	font-style: italic;
+}
+
+
+/* ---------------------------- */
+
+.stage{
+	position: relative;
+	top: 40px;
+	margin: auto;
+	width: 100%;
+	max-width: 600px;
+	height: 100%;
+	min-height: 500px;
+	opacity: 0;
+}
+.breakIt{
+	font-size: 8rem;
+	color: red;
+	text-shadow: 0 0 3px black, 0 0 20px yellow;
+	font-style: italic;
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	z-index: 9;
+	text-align: center;
+	width: 100%;
+	display: block;
+	margin-top: -4rem;
+	-webkit-transform: rotate(-10deg);
+	display: none;
+}
+
+.mightness-meter{
+	position: absolute;
+	bottom: 100px;
+	right: 0;
+	width: 30px;
+	height: 200px;
+
+	overflow: visible;
+
+	-webkit-transition: box-shadow linear 200ms;
+
+	background: rgb(252,187,108);
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZjYmI2YyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2YxZTc2NyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmY2JiNmMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(left, rgba(252,187,108,1) 0%, rgba(241,231,103,1) 50%, rgba(252,187,108,1) 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(252,187,108,1)), color-stop(50%,rgba(241,231,103,1)), color-stop(100%,rgba(252,187,108,1)));
+	background: -webkit-linear-gradient(left, rgba(252,187,108,1) 0%,rgba(241,231,103,1) 50%,rgba(252,187,108,1) 100%);
+	background: -o-linear-gradient(left, rgba(252,187,108,1) 0%,rgba(241,231,103,1) 50%,rgba(252,187,108,1) 100%);
+	background: -ms-linear-gradient(left, rgba(252,187,108,1) 0%,rgba(241,231,103,1) 50%,rgba(252,187,108,1) 100%);
+	background: linear-gradient(to right, rgba(252,187,108,1) 0%,rgba(241,231,103,1) 50%,rgba(252,187,108,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcbb6c', endColorstr='#fcbb6c',GradientType=1 );
+}
+.mightness{
+
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	border-top: solid 1px black;
+
+	-webkit-transition: height linear 100ms;
+
+	background: rgb(255,172,109);
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmYWM2ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmNDc0NyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmFjNmQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(left, rgba(255,172,109,1) 0%, rgba(255,71,71,1) 50%, rgba(255,172,109,1) 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,172,109,1)), color-stop(50%,rgba(255,71,71,1)), color-stop(100%,rgba(255,172,109,1)));
+	background: -webkit-linear-gradient(left, rgba(255,172,109,1) 0%,rgba(255,71,71,1) 50%,rgba(255,172,109,1) 100%);
+	background: -o-linear-gradient(left, rgba(255,172,109,1) 0%,rgba(255,71,71,1) 50%,rgba(255,172,109,1) 100%);
+	background: -ms-linear-gradient(left, rgba(255,172,109,1) 0%,rgba(255,71,71,1) 50%,rgba(255,172,109,1) 100%);
+	background: linear-gradient(to right, rgba(255,172,109,1) 0%,rgba(255,71,71,1) 50%,rgba(255,172,109,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffac6d', endColorstr='#ffac6d',GradientType=1 );
+}
+
+.mightness:after, .mightness:before{
+	content: '';
+	border: solid 6px transparent;
+	display: block;
+	position: absolute;
+	top: -7px;
+	width: 6px;
+	height: 6px;
+}
+.mightness:before{
+	left: -7px;
+	border-left-color: black;
+}
+.mightness:after{
+	right: -7px;
+	border-right-color: black;
+}
+
+body[data-power-range="0"] .mightness-meter{
+	box-shadow: 0 0 10px #000;
+}
+body[data-power-range="1"] .mightness-meter{
+	box-shadow: 0 0 10px #ff0;
+}
+body[data-power-range="2"] .mightness-meter{
+	box-shadow: 0 0 20px #ff0;
+}
+body[data-power-range="3"] .mightness-meter{
+	box-shadow: 0 0 20px #f00, 0 0 40px #f00;
+}
+body[data-power-range="4"] .mightness-meter{
+	box-shadow: 0 0 20px #f00, 0 0 40px #f00;
+}
+body[data-power-range="5"] .mightness-meter{
+	box-shadow: 0 0 20px #f00, 0 0 60px #f00;
+}
+
+.timer{
+	font-size: 3rem;
+	color: red;
+	text-shadow: 0 0 4px black;
+	font-weight: bold;
+	text-align: right;
+}
+
+.give-up{
+	position: absolute;
+	right: 0;
+	top: 16px;
+	font-size: 1.4rem;
+	cursor: pointer;
+}
+
+.warrior{
+	background: url(../images/sprites.png) no-repeat;
+	background-position: left bottom;
+	width: 348px;
+	height: 557px;
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	margin-left: -174px;
+}
+
+body[data-power-range="1"] .warrior{
+	background-position: -347px bottom;
+}
+body[data-power-range="2"] .warrior{
+	background-position: -696px bottom;
+}
+body[data-power-range="3"] .warrior{
+	background-position: -1048px bottom;
+}
+body[data-power-range="4"] .warrior{
+	background-position: -1388px bottom;
+}
+body[data-power-range="5"] .warrior{
+	background-position: -1750px bottom;
+}
+/* ---------------------------- */
+
+
+.game-started .menu{
+	opacity: 0;
+}
+.game-started .stage{
+	opacity: 1;
+}
+.game-started.waiting .breakIt{
+	display: block;
+}
+.game-started.waiting .breakIt span{
+	-webkit-animation: breakIt linear 0.2s 1;
+}
+
+@-webkit-keyframes breakIt{
+	0%{
+		opacity: 0.6;
+		font-size: 80%;
+	}
+	50%{
+		opacity: 1;
+		font-size: 100%;
+	}
+	70%{
+		opacity: 1;
+		font-size: 120%;
+	}
+	100%{
+		opacity: 1;
+		font-size: 100%
+	}
+}
