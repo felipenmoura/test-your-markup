@@ -45,7 +45,7 @@ h2{
 .menu{
 	position: absolute;
 	right: 0;
-	top: 0px;
+	top: 20px;
 	width: 320px;
     z-index: 9;
 
@@ -594,9 +594,20 @@ body.hitted .warrior{
 	color: #51DD57 !important;
 	text-shadow: 0 0 10px green !important;
 }
-#share-buttons{
+#share-buttons {
 	position: fixed;
-	left: 20px;
+	left: 6px;
 	top: 6px;
 	z-index: 9999;
+}
+#share-buttons a,
+#share-buttons a:visited,
+#share-buttons a:link,
+#share-buttons a:active {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+#share-buttons a:hover {
+    text-decoration: underline;
 }
