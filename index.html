@@ -8,7 +8,9 @@
         <meta property="og:site_name" content="Felipe N. Moura . org"/>
         <meta property="og:type" content="blog"/>
         <meta property="og:title" content="Test your markup"/>
-        <meta property="og:description" content="Test your HTML5 markupt knowledge, memory and typing speed with this simple game.">
+        <meta property="og:description" content="Test your HTML5 markupt knowledge, memory and typing speed with this simple game. It will test your knowledge on HTML, and JavaScript.">
+
+        <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
 
 	</head>
 	<body data-power-range="0">
@@ -42,10 +44,10 @@
 			<h2>See how many, or tough objects you can break</h2>
 			<ol>
 				<li>
-					<span class='start-trying'>Start</span>
+					<span class='start-trying menu-item'>Start</span>
 				</li>
 				<li>
-					<label class='how-to-label'>How to?</label>
+					<label class='how-to-label menu-item'>How to?</label>
 					<ul type='disc' class='how-to-content'>
 						<li>Select the set and start the game</li>
 						<li>Type words that belong to the set</li>
@@ -56,8 +58,9 @@
 					</ul>
 				</li>
 				<li>
-					<label>Select the set</label>
+					<label class='menu-item'>Select:</label>
 					<select id='tableset'>
+						<option value="js-libs">JS Frameworks/Libs</option>
 						<option value="html5">HTML5</option>
 						<option value="countries">Countries</option>
 						<option value="periodicTable">Periodic Table</option>
@@ -78,7 +81,7 @@
 
 		<div class='stage'>
 			<div class='breakIt'><span>Break it!</span></div>
-			<div class='final-result'>Fail</div>
+			<div class='final-result'>You Fail</div>
 			<div><span class='timer'>10</span><span class='give-up'>Give it up</span><ul type='none' class='used-words'></ul><span class='cur-level-label'></span></div>
 			<div id='thing'></div>
 			<div class='warrior'>

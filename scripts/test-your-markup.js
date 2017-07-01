@@ -130,8 +130,8 @@
 			}
 		}else{
 			body.classList.add('half-broken');
-			r.innerHTML= 'Fail';
-			btnEl.value= 'Try again';
+			r.innerHTML= 'You Fail';
+			btnEl.value= 'Retry';
 			btnEl.addEventListener('click', restartGame);
 		}
 		r.appendChild(btnEl);
@@ -266,7 +266,4 @@
 	giveUpBtn.addEventListener('click', function(){
 		cancelGame();
 	});
-
-
-
 }(this);

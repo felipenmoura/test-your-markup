@@ -1,3 +1,10 @@
+/*
+@font-face {
+    font-family: 'Murderer';
+    src: url("./youmurdererbb_reg.otf") format("opentype");
+}
+*/
+
 *, *:before, *:after{
 	box-sizing: border-box;
 }
@@ -15,12 +22,16 @@ body{
 	font-size: 14px;
 	font-family: Tahoma, Sans-Serif;
 	/*background-image: url(../images/the-wall-of-dragon.jpg);*/
-	background-image: url(../images/bg.jpg);
+	background-image: url(../images/bg-3.jpg);
 	background-attachment: fixed;
-	background-size: 100% 100%;
+	background-size: cover;
 	background-position: right bottom;
 	background-repeat: no-repeat;
 	overflow: hidden;
+}
+
+input {
+    font-family: 'Nosifer', cursive;
 }
 
 h1{
@@ -36,6 +47,7 @@ h2{
 	right: 0;
 	top: 0px;
 	width: 320px;
+    z-index: 9;
 
 	-webkit-transition: all 500ms linear;
 	-moz-transition: all 500ms linear;
@@ -44,6 +56,7 @@ h2{
 .menu ol{
 	list-style: none;
 	padding: 0;
+    font-family: 'Nosifer', cursive;
 }
 .menu .start-trying{
 	cursor: pointer;
@@ -91,9 +104,11 @@ h2{
 	font-weight: bold;
 	cursor: pointer;
 
+/*
 	-webkit-appearance: initial;
 	-moz-appearance: initial;
 	appearance: initial;
+*/
 }
 
 select, option{
@@ -105,15 +120,23 @@ select, option{
 	font-weight: bold;
 	color: #f00;
 	background-color: #fdd;
-
+/*
 	-webkit-appearance: initial;
 	-moz-appearance: initial;
 	appearance: initial;
+*/
+}
+
+.menu-item:hover {
+    text-decoration: underline;
 }
 
 select{
-	width: 240px;
-
+    width: 240px;
+    height: 60px;
+    border-radius: 0;
+    background: #f66;
+    color: #fff;
 }
 
 .how-to-label{
@@ -131,6 +154,7 @@ select{
 	height: 100%;
 	min-height: 500px;
 	opacity: 0;
+    font-family: 'Nosifer', cursive;
 }
 .final-result input{
 	position: absolute;
@@ -153,7 +177,7 @@ select{
 	appearance: initial;
 }
 .breakIt, .final-result{
-	font-size: 8rem;
+	font-size: 4.5rem;
 	cursor: default;
 	color: red;
 	text-shadow: 0 0 3px black, 0 0 20px yellow;
@@ -188,6 +212,8 @@ select{
 	right: 0;
 	width: 30px;
 	height: 200px;
+    background: url(../images/bar-bg.jpg) no-repeat;
+    background-size: cover;
 
 	overflow: visible;
 
@@ -195,6 +221,7 @@ select{
 	-moz-transition: box-shadow linear 200ms;
 	transition: box-shadow linear 200ms;
 
+/*
 	background: rgb(252,187,108);
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZjYmI2YyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2YxZTc2NyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmY2JiNmMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
 	background: -moz-linear-gradient(left, rgba(252,187,108,1) 0%, rgba(241,231,103,1) 50%, rgba(252,187,108,1) 100%);
@@ -204,6 +231,7 @@ select{
 	background: -ms-linear-gradient(left, rgba(252,187,108,1) 0%,rgba(241,231,103,1) 50%,rgba(252,187,108,1) 100%);
 	background: linear-gradient(to right, rgba(252,187,108,1) 0%,rgba(241,231,103,1) 50%,rgba(252,187,108,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcbb6c', endColorstr='#fcbb6c',GradientType=1 );
+*/
 }
 
 .cur-level-label{
@@ -217,7 +245,6 @@ select{
 }
 
 .mightness{
-
 	position: absolute;
 	bottom: 0;
 	left: 0;
