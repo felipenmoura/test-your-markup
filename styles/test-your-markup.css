@@ -78,10 +78,11 @@ h2{
 	position: fixed;
 	left: 50%;
 	top: 50%;
-	margin-left: -160px;
-	margin-top: -160px;
-	width: 320px;
-	height: 160px;
+    margin-left: -210px;
+    margin-top: -150px;
+    line-height: 27px;
+    width: 420px;
+    height: 300px;
 	overflow: auto;
 	background: white;
 	border: solid 1px black;
