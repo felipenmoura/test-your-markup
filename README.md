@@ -8,7 +8,7 @@ If you got to the end of the game, tweet a print of it mentioning [@felipenmoura
 
 Try it! [Test your markup!](http://felipenmoura.com/test-your-markup/)
 
-[](![Animated demo](https://github.com/felipenmoura/test-your-markup/blob/master/images/animation-demo.gif?raw=true))
+![Animated demo](https://github.com/felipenmoura/test-your-markup/blob/master/images/animation-demo.gif?raw=true)
 
 ## Help wanted
 
