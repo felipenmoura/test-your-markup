@@ -16,4 +16,5 @@ It would be awesome if you could help with:
 - adding sounds and background song
 - adding more options/lists
 - keeping updated the lists that exist there (send suggestions, as well)
+- better design/images/colors/fonts
 - reporting bugs and sending feedback :)
