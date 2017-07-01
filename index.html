@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Test Your Markup</title>
+		<link rel="stylesheet" type="text/css" href="styles/test-your-markup.css">
+
+		<meta property="og:image" content="http://felipenmoura.org/projects/test-your-markup/images/test-your-markup-share.png"/>
+        <meta property="og:site_name" content="Felipe N. Moura . org"/>
+        <meta property="og:type" content="blog"/>
+        <meta property="og:title" content="Test your markup"/>
+        <meta property="og:description" content="Test your HTML5 markupt knowledge, memory and typing speed with this simple game. It will test your knowledge on HTML, and JavaScript.">
+
+        <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
+
+	</head>
+	<body data-power-range="0">
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=281929191903584";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
+
+        <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-1270869-17']);
+        _gaq.push(['_setDomainName', 'felipenmoura.org']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+        </script>
+
+		<div class='menu'>
+			<h1>Test your Markup!</h1>
+			<h2>See how many, or tough objects you can break</h2>
+			<ol>
+				<li>
+					<span class='start-trying menu-item'>Start</span>
+				</li>
+				<li>
+					<label class='how-to-label menu-item'>How to?</label>
+					<ul type='disc' class='how-to-content'>
+						<li>Select the set and start the game</li>
+						<li>Type words that belong to the set</li>
+						<li>Hit enter for each word you typed(words cannot be reused)</li>
+						<li>Time will decrease the strike strength</li>
+						<li>Once the time is up, or the strengh reached the required ammount, it hits</li>
+						<input type=button value="Got it" />
+					</ul>
+				</li>
+				<li>
+					<label class='menu-item'>Select:</label>
+					<select id='tableset'>
+						<option value="js-libs">JS Frameworks/Libs</option>
+						<option value="html5">HTML5</option>
+						<option value="countries">Countries</option>
+						<option value="periodicTable">Periodic Table</option>
+					</select>
+				</li>
+				<!--<li>
+					<label>Select a level</label>
+					<select class='level' id='level'>
+						<option value="20">Wood</option>
+						<option value="40">Double Wood</option>
+						<option value="60">Brick</option>
+						<option value="80">Stone</option>
+						<option value="95">Ice</option>
+					</select>
+				</li>-->
+			</ol>
+		</div>
+
+		<div class='stage'>
+			<div class='breakIt'><span>Break it!</span></div>
+			<div class='final-result'>You Fail</div>
+			<div><span class='timer'>10</span><span class='give-up'>Give it up</span><ul type='none' class='used-words'></ul><span class='cur-level-label'></span></div>
+			<div id='thing'></div>
+			<div class='warrior'>
+			</div>
+			<input id='input-word' type=text value='' maxlength=15 />
+			<div class='mightness-meter'>
+				<div class='mightness'></div>
+			</div>
+		</div>
+
+		<div id='iamimpressedbyyourmarkup'>
+			<label>Impressive!</label>
+			<div></div>
+		</div>
+
+		<div id='share-buttons'>
+			<div class="fb-like" data-href="http://felipenmoura.org/projects/test-your-markup/index.html" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
+		</div>
+
+		<script src='scripts/test-your-markup.js'></script>
+	</body>
+</html>
