@@ -108,7 +108,7 @@
 		body.classList.add('hitted');
 		var btnEl= document.createElement('input');
 		btnEl.type= 'button';
-hitEnergy = energyTarget
+
 		if(hitEnergy >= energyTarget){
 			body.classList.add('broken');
 			r.innerHTML= 'Success';
@@ -139,7 +139,7 @@ hitEnergy = energyTarget
 		r.style.display= 'block';
 		//setTimeout(function(){r.style.display= 'none'; restartGame();}, 3000);
 	}
-window.goUpAndDown = goUpAndDown
+
 	function goUpAndDown(current, goindDown){
 		current= current || body.getAttribute('data-power-range');
 		var time= 30;
