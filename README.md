@@ -6,6 +6,9 @@ You can try it out using the name of countries or, if you are a web developer, H
 Seens easy? Well, it might be harder than you think!  
 If you got to the end of the game, tweet a print of it mentioning [@felipenmoura](https://twitter.com/felipenmoura) with the _hashtag_ `#flowless` :)
 
+### Try it!
+[Test your markup!](http://felipenmoura.com/test-your-markup/)
+
 ![Animated demo](https://github.com/felipenmoura/test-your-markup/blob/master/images/animation-demo.gif?raw=true)
 
 ## Help wanted
