@@ -201,7 +201,7 @@
 			if(energy > 100){
 				energy= 100;
 			}
-			playAudio("audio/correctWord.mp3");
+			playAudio("audio/correctWords.mp3");
 			selectedList.splice(selectedList.indexOf(val), 1);
 			newLi.innerHTML= '&nbsp;'+val+'&nbsp;';
 			usedWords.appendChild(newLi);
