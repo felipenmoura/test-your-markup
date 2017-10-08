@@ -2,6 +2,7 @@
 
 	var getEl= function(qr){ return document.querySelector(qr); },
 		startTrigger= getEl('.start-trying'),
+		audio= new Audio(), 
 		mightness= getEl('.mightness'),
 		menu= getEl('.menu'),
 		timer= getEl('.timer'),
@@ -96,6 +97,7 @@
 		}
 
 		function youAreImpressive(){
+			playAudio("audio/impressive.mp3");
 			body.classList.add('iamimpressedbyyourmarkup');
 		};
 		window.youAreImpressive= youAreImpressive;
@@ -107,6 +109,7 @@
 			btnEl.type= 'button';
 
 			if(hitEnergy >= energyTarget){
+				playAudio("audio/success.mp3");
 				body.classList.add('broken');
 				r.innerHTML= 'Success';
 				if(flags.currentLevel +1 < levels.length){
@@ -127,6 +130,7 @@
 					//btnEl.addEventListener('click', restartGame);
 				}
 			}else{
+				playAudio("audio/fail.mp3");
 				body.classList.add('half-broken');
 				r.innerHTML= 'You Fail';
 				btnEl.value= 'Retry';
@@ -197,7 +201,7 @@
 			if(energy > 100){
 				energy= 100;
 			}
-
+			playAudio("audio/correctWord.mp3");
 			selectedList.splice(selectedList.indexOf(val), 1);
 			newLi.innerHTML= '&nbsp;'+val+'&nbsp;';
 			usedWords.appendChild(newLi);
@@ -247,6 +251,11 @@
 				}
 			}
 		});
+
+		function playAudio(source){
+		audio.src=source; //defining source 
+		audio.play(); //playing the audio
+		}
 
 		function cancelGame(){
 			endGame();
