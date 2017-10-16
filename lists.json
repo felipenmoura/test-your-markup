@@ -1,5 +1,5 @@
 {
-  "programmingLanguages": ["AsciiDots", "Befunge", "Brainfuck", "LOLCODE", "Malbolge", "Piet", "Shakespeare", "Whitespace", "Javascript", "Forth", "Haskell", "Racket", "Common Lisp", "Scheme", "Clojure", "Scala", "Java", "Python", "C#", "F#", "C", "C++", "Swift", "Objective-C", "Rust", "Julia", "FORTRAN", "COBOL", "Pyret"],
+  "programmingLanguages": ["AsciiDots", "Befunge", "Brainfuck", "LOLCODE", "Malbolge", "Piet", "Shakespeare", "Whitespace", "Javascript", "Forth", "Haskell", "Racket", "Common Lisp", "Scheme", "Clojure", "Scala", "Java", "Python", "C#", "F#", "C", "C++", "Swift", "Objective-C", "Rust", "Julia", "FORTRAN", "COBOL", "Pyret", "R", "Delphi", "Erlang", "Ruby", "Kotlin", "Pascal"],
   
   "usStates": ["AK","AL","AR","AZ","CA","CO","CT","DC","DE","FL","GA","GU","HI","IA","ID", "IL","IN","KS","KY","LA","MA","MD","ME","MH","MI","MN","MO","MS","MT","NC","ND","NE","NH","NJ","NM","NV","NY", "OH","OK","OR","PA","PR","PW","RI","SC","SD","TN","TX","UT","VA","VI","VT","WA","WI","WV","WY"],
   
