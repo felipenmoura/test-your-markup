@@ -43,12 +43,16 @@ h1 {
     margin-bottom: 0;
     font-family: 'Orbitron', sans-serif;
     font-size: 25px;
+    position: relative;
+    right: 560px;
+    margin-top: 10px;
 }
 
 h2 {
-    font-size: 1rem;
-    margin-bottom: 0;
+    font-size: 0.8rem;
     font-family: 'Orbitron', sans-serif;
+    position: relative;
+    right: 569px;
 }
 
 .menu {
@@ -75,16 +79,22 @@ h2 {
 }
 
 .menu label {
-    margin-top: 20px;
+    margin-top: 15px;
+    margin-bottom: 50px;
     display: block;
+    padding-top: 20px;
 }
 
 .menu label,
 .menu .start-trying {
+    padding-top: 20px;
     font-size: 2rem;
     font-weight: bold;
-    color: #f66;
+    color: rgb(158, 255, 102);
     font-style: normal;
+    position: relative;
+    right: 188%;
+    margin-top: 10px;
 }
 
 .menu ul {
@@ -149,8 +159,11 @@ option {
 }
 
 select {
-    width: 240px;
+    position: relative;
+    margin-top: -20px;
+    width: 230px;
     height: 60px;
+    right: 177%;
     border-radius: 0;
     background: #f66;
     color: #fff;
