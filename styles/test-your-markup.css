@@ -50,6 +50,8 @@ h1 {
     position: relative;
     right: 560px;
     margin-top: 10px;
+    letter-spacing: 0.1em;
+    font-weight: 700px;
 }
 
 h2 {
