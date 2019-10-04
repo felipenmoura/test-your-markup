@@ -34,6 +34,10 @@ body {
     overflow: hidden;
 }
 
+img {
+    border-radius: 50%;
+}
+
 input {
     font-family: 'Nosifer', cursive;
 }
@@ -669,9 +673,11 @@ body.hitted .warrior {
 
 #share-buttons {
     position: fixed;
+    word-spacing: 5px;
     left: 6px;
     top: 6px;
     z-index: 9999;
+    margin: 20px;
 }
 
 #share-buttons a,
