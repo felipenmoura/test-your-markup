@@ -1,20 +1,23 @@
 <!doctype html>
 <html>
-	<head>
-		<title>Test Your Markup</title>
-		<link rel="stylesheet" type="text/css" href="styles/test-your-markup.css">
 
-		<meta property="og:image" content="http://felipenmoura.com/test-your-markup/images/animation-demo.gif"/>
-		<meta property="og:site_name" content="FelipeNMoura.com"/>
-		<meta property="og:type" content="blog"/>
-		<meta property="og:title" content="Test your markup"/>
-		<meta property="og:description" content="Test your HTML5 markupt knowledge, memory and typing speed with this simple game. It will also test your knowledge on JavaScript Frameworks and libraries.">
+<head>
+    <title>Test Your Markup</title>
+    <link rel="stylesheet" type="text/css" href="styles/test-your-markup.css">
 
-		<link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
+    <meta property="og:image" content="http://felipenmoura.com/test-your-markup/images/animation-demo.gif" />
+    <meta property="og:site_name" content="FelipeNMoura.com" />
+    <meta property="og:type" content="blog" />
+    <meta property="og:title" content="Test your markup" />
+    <meta property="og:description" content="Test your HTML5 markupt knowledge, memory and typing speed with this simple game. It will also test your knowledge on JavaScript Frameworks and libraries.">
 
-	</head>
-	<body data-power-range="0">
-		<!-- div id="fb-root"></div>
+    <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Turret+Road:700&display=swap" rel="stylesheet">
+
+</head>
+
+<body data-power-range="0">
+    <!-- div id="fb-root"></div>
 		<script>(function(d, s, id) {
 		  var js, fjs = d.getElementsByTagName(s)[0];
 		  if (d.getElementById(id)) return;
@@ -23,48 +26,49 @@
 		  fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));</script -->
 
-		<!--Background Music-->
-		<audio src="audio/Royalty_Free_Gaming_Music.mp3" autoplay>
+    <!--Background Music-->
+    <audio src="audio/Royalty_Free_Gaming_Music.mp3" autoplay>
 			<p>Your browser does not support audio</p>
 			<embed src="audio/Royalty_Free_Gaming_Music.mp3" width="180" height="90" hidden="true" />
 		</audio>
 
-        <script type="text/javascript">
-
+    <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-1270869-17']);
         _gaq.push(['_setDomainName', 'felipenmoura.com']);
         _gaq.push(['_trackPageview']);
 
         (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
         })();
+    </script>
 
-        </script>
-
-		<div class='menu'>
-			<h1>Test your Markup!</h1>
-			<h2>See how many, or tough objects you can break</h2>
-			<ol>
-				<li>
-					<span class='start-trying menu-item'>Start</span>
-				</li>
-				<li>
-					<label class='how-to-label menu-item'>How to Play</label>
-					<ul type='disc' class='how-to-content'>
-						<li>Choose a category under Select</li>
-						<li>Press 'Start' to start playing</li>
-						<li>Type a word belonging to the category and hit 'enter' (no duplicates)</li>
-						<li>For each level, strike strength decreases as time passes</li>
-						<li>The level ends once time is up or the strike meter reaches the required amount</li>
-						<input type=button value="Got it" />
-					</ul>
-				</li>
-				<li>
-					<label class='menu-item'>Select:</label>
-					<select id='tableset'>
+    <div class='menu'>
+        <h1>Test your Markup!</h1>
+        <h2>See how many or tough objects you can break</h2>
+        <ol>
+            <li>
+                <span class='start-trying menu-item'>Start</span>
+            </li>
+            <li>
+                <label class='how-to-label menu-item'>How to Play</label>
+                <ul type='disc' class='how-to-content'>
+                    <li>Choose a category under Select</li>
+                    <li>Press 'Start' to start playing</li>
+                    <li>Type a word belonging to the category and hit 'enter' (no duplicates)</li>
+                    <li>For each level, strike strength decreases as time passes</li>
+                    <li>The level ends once time is up or the strike meter reaches the required amount</li>
+                    <input type=button value="Got it" />
+                </ul>
+            </li>
+            <li>
+                <label class='menu-item'>Select:</label>
+                <select id='tableset'>
 						<option value="js-libs">JS Frameworks/Libs</option>
 						<option value="html5">HTML5</option>
 						<option value="css3Properties">CSS3 Properties</option>
@@ -77,8 +81,8 @@
 						<option value="cmdCommands">CMD Commands</option>
 						<option value="linuxCommands">Linux Commands</option>
 					</select>
-				</li>
-				<!--<li>
+            </li>
+            <!--<li>
 					<label>Select a level</label>
 					<select class='level' id='level'>
 						<option value="20">Wood</option>
@@ -88,34 +92,39 @@
 						<option value="95">Ice</option>
 					</select>
 				</li>-->
-			</ol>
-		</div>
+        </ol>
+    </div>
 
-		<div class='stage'>
-			<div class='breakIt'><span>Break it!</span></div>
-			<div class='final-result'>You Fail</div>
-			<div><span class='timer'>10</span><span class='give-up'>Give Up</span><ul type='none' class='used-words'></ul><span class='cur-level-label'></span></div>
-			<div id='thing'></div>
-			<div class='warrior'>
-			</div>
-			<input id='input-word' type=text value='' maxlength=15 />
-			<div class='mightness-meter'>
-				<div class='mightness'></div>
-			</div>
-		</div>
+    <div class='stage'>
+        <div class='breakIt'><span>Break it!</span></div>
+        <div class='final-result'>You Fail</div>
+        <div><span class='timer'>10</span><span class='give-up'>Give Up</span>
+            <ul type='none' class='used-words'></ul><span class='cur-level-label'></span></div>
+        <div id='thing'></div>
+        <div class='warrior'>
+        </div>
+        <input id='input-word' type=text value='' maxlength=15 />
+        <div class='mightness-meter'>
+            <div class='mightness'></div>
+        </div>
+    </div>
 
-		<div id='iamimpressedbyyourmarkup'>
-			<label>Impressive!</label>
-			<div></div>
-		</div>
+    <div id='iamimpressedbyyourmarkup'>
+        <label>Impressive!</label>
+        <div></div>
+    </div>
 
-		<div id='share-buttons'>
-            <span>Follow <a href="https://twitter.com/felipenmoura" target="_blank">@felipenmoura</a></span>
-            <span> | <a href="https://github.com/felipenmoura/test-your-markup" target="_blank">Github</a></span>
-            <span> | <a href="https://felipenmoura.com/labs" target="_blank">more</a></span>
-			<!--<div class="fb-like" data-href="http://felipenmoura.org/projects/test-your-markup/index.html" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>-->
-		</div>
+    <div id='share-buttons'>
+        <span>Follow <a href="https://twitter.com/felipenmoura" target="_blank">@felipenmoura</a></span>
+        <span> <a href="https://github.com/felipenmoura/test-your-markup" target="_blank">
+                  <img src="github-logo.jpg" alt="github" height="25px" width="25px" brorder-radius="50%"/>
+              </a>
+        </span>
+        <span> | <a href="https://felipenmoura.com/labs" target="_blank">more</a></span>
+        <!--<div class="fb-like" data-href="http://felipenmoura.org/projects/test-your-markup/index.html" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>-->
+    </div>
 
-		<script src='scripts/test-your-markup.js'></script>
-	</body>
+    <script src='scripts/test-your-markup.js'></script>
+</body>
+
 </html>
